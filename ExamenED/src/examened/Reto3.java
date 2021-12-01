@@ -123,7 +123,9 @@ public class Reto3 extends javax.swing.JFrame {
         double preciosin = parsedouble(jlbPrecio);
         double precioiva = parsedouble(jlbIVA);
         double resultado = parsedouble(jlbResultado);
+        String nombre= parseString(jlbNombre);
         resultado = preciosin * (precioiva/100)+1;
+        System.out.println("Producto" + nombre + ": " + resultado + "€");
     }//GEN-LAST:event_bttnCalculadorActionPerformed
 
     private void jtfIVAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfIVAActionPerformed
@@ -182,6 +184,10 @@ public class Reto3 extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private double parsedouble(JLabel jlbNombre) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private String parseString(JLabel jlbNombre) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
