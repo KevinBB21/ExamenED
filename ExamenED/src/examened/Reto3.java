@@ -5,6 +5,8 @@
  */
 package examened;
 
+import javax.swing.JLabel;
+
 /**
  *
  * @author examened
@@ -118,7 +120,10 @@ public class Reto3 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bttnCalculadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bttnCalculadorActionPerformed
-        double preciosin =(double.parsedouble(jlbNombre));
+        double preciosin = parsedouble(jlbPrecio);
+        double precioiva = parsedouble(jlbIVA);
+        double resultado = parsedouble(jlbResultado);
+        resultado = preciosin * (precioiva/100)+1;
     }//GEN-LAST:event_bttnCalculadorActionPerformed
 
     private void jtfIVAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfIVAActionPerformed
@@ -175,4 +180,8 @@ public class Reto3 extends javax.swing.JFrame {
     private javax.swing.JTextField jtfNombre;
     private javax.swing.JTextField jtfPrecio;
     // End of variables declaration//GEN-END:variables
+
+    private double parsedouble(JLabel jlbNombre) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
